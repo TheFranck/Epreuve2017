@@ -18,6 +18,10 @@
 Route::get('/', 'AccueilController@index');
 Route::get('/list','ListController@index');
 Route::get('/addManga','ListController@addManga');
+Route::post('/insert/manga','ListController@insertManga');
+Route::post('/delete/manga','ListController@deleteManga');
+Route::post('/update/manga','ListController@updateManga');
+Route::post('/update/manga/action','ListController@updateMangaAction');
 
 Route::get('/add/author', 'AuthorsController@addAuthor');
 Route::post('/insert/author','AuthorsController@insertAuthor');

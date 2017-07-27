@@ -15,13 +15,24 @@
 
                       <tr>
                         <td>
-                          <!--<img src="{{ URL::asset($manga['cover'])}}" alt="">-->
+                        <img src="{{ URL::asset($manga['cover'])}}" alt="Couverture du manga">
                         </td>
                         <td>{{ $manga['title'] }}</td>
                         <td>
                           @foreach ($manga['author'] as $author)
                             {{ $author }}
                           @endforeach
+                        </td>
+                        <td>{{ Form::open(['url' => '/delete/manga']) }}
+                            {{ Form::hidden('id', $manga['id']) }}
+                            {{ Form::submit('Supprimer')}}
+                            {{ Form::close() }}
+                        </td>
+                        <td>
+                          {{ Form::open(['url' => '/update/manga']) }}
+                          {{ Form::hidden('id', $manga['id']) }}
+                          {{ Form::submit('Mettre à jour ')}}
+                          {{ Form::close() }}
                         </td>
                       </tr>
                     @endforeach

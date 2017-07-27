@@ -1,7 +1,7 @@
 <nav>
   <h1>The French Mangathèque</h1>
   <ul>
-   <li><a href="/accueil">Accueil</a></li>
+   <li><a href="/">Accueil</a></li>
    <li><a href="/list">Liste des Mangas</a></li>
   @if (Auth::guest())
    <li><a href="{{ route('login') }}">Login</a></li>

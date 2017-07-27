@@ -49,14 +49,48 @@ class ListController extends Controller
 
 public function insertManga(Request $request)
 {
-  //$store = $request->cover->store('public/img');
-  $store = str_replace("public", "storage", $store); // On remplace public par storage
+  $store = $request->cover->store('public/img');
+  $store = str_replace("public", "storage", $store);
   $manga = new Manga;
   $manga->title = $request->title;
-  //$book->author = $request->author;
-  //$book->save();
   $manga->cover = $store;
   $manga->save();
+  $manga->authors()->attach($request->author);
+  return redirect ('/list');
+}
+/***********************************/
+
+public function deleteManga(Request $request)
+{
+  $manga = Manga::find($request->id);
+  $manga->authors()->detach();
+  $manga->delete();
+  return redirect ('/list');
+}
+
+/***********************************/
+
+public function updateManga(Request $request)
+{
+  $manga = Manga::find($request->id);
+  $authors= Author::all();
+  $authorsList = array();
+  foreach ($authors as $author)
+    {
+      $authorsList[$author->id] = $author->author_name;
+    }
+  return view('updateManga', ['title' => $manga->title, 'authors' => $authorsList, 'id' => $manga->id]);
+}
+
+/***********************************/
+
+public function updateMangaAction(Request $request)
+{
+  $manga = Manga::find($request->id);
+  $manga->title = $request->title;
+  // $book->author = $request->author;
+  $manga->save();
+  $manga->authors()->detach();
   $manga->authors()->attach($request->author);
   return redirect ('/list');
 }

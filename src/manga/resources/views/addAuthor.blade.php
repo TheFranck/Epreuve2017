@@ -7,11 +7,11 @@
             <div class="panel panel-default">
 
                 <div class="panel-body">
-                  <h2>Votre bibliothèque virtuelle</h2>
-                  <p>Ajouter un auteur via ce formulaire</p>
-                  <ul>
+                  <h2>Rajout d'un mangaka</h2>
+                  <p>Ajouter un mangaka via ce formulaire</p>
+                  <ul class="mangaka_name">
                     @foreach ($authors as $author)
-                        <li>{{ $author }}</li>
+                        <li> {{ $author }} </li>
                     @endforeach
                   </ul>
                   {{ Form::open(['url' => '/insert/author']) }} <!-- Trouver sur laravel Collective-->

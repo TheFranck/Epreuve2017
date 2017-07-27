@@ -6,6 +6,7 @@ body{
   justify-content: center;
   align-items: center;
   background-color: #FFF3DC;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 /***************** HEADER ***********************/
@@ -52,6 +53,9 @@ li {
    color: white;
  }
 
+h1 {
+
+}
 /**************** MAIN IMAGE **************************/
 
 .img-header {

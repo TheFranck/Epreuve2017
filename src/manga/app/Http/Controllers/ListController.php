@@ -20,6 +20,7 @@ class ListController extends Controller
         "author" => array(),
         "id" => $manga->id,
         "cover" =>$manga->cover,
+        "description"=>$manga->description,
       ]
     );
 
@@ -53,6 +54,7 @@ public function insertManga(Request $request)
   $store = str_replace("public", "storage", $store);
   $manga = new Manga;
   $manga->title = $request->title;
+  $manga->description = $request->description;
   $manga->cover = $store;
   $manga->save();
   $manga->authors()->attach($request->author);

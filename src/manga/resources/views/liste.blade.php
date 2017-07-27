@@ -6,8 +6,8 @@
                   <p>Ici se trouve la liste de vos mangas</p>
                   <table>
                     <tr>
-                      <th>nom du Manga</th>
-                      <th>Auteur du manga</th>
+                      <th>Nom du Manga</th>
+                      <th>Nom du Mangaka</th>
                     </tr>
 
                     @foreach ($mangas as $manga)
@@ -23,6 +23,7 @@
                             {{ $author }}
                           @endforeach
                         </td>
+                        <td>{{ $manga['description'] }}</td>
                         <td>{{ Form::open(['url' => '/delete/manga']) }}
                             {{ Form::hidden('id', $manga['id']) }}
                             {{ Form::submit('Supprimer')}}

@@ -15,6 +15,8 @@
                   {{ Form::text('title') }}
                   {{ Form::label('author', 'le nom d\'un auteur') }}
                   {{ Form::select('author[]', $authors, null, array('multiple' => 'multiple'))}}
+                  {{ Form::label('description', 'Synopsis du manga') }}
+                  {{ Form::textarea('description') }}
                   {{ Form::file('cover')}}
                   {{ Form::submit('Ajouter ce Manga')}}
 

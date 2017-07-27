@@ -5,14 +5,17 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #FFF3DC;
 }
+
+/***************** HEADER ***********************/
 
 header {
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: #133340;
-    color: #4BCEFF;
+    background-color: #F2E7D5;
+    color: #422406;
 }
 
 
@@ -41,6 +44,7 @@ li {
 
  a {
    text-decoration: none;
+   color: #422406;
  }
 
  a:hover {
@@ -48,6 +52,17 @@ li {
    color: white;
  }
 
+/**************** MAIN IMAGE **************************/
+
+.img-header {
+  background-image: url('/img/image-header2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 560px;
+  margin-top: 0;
+}
+
+/**************** SECTION **************************/
 h2 {
   text-align: center;
   padding: 20px 10px;
@@ -68,7 +83,7 @@ section {
   width: 100%;
   padding: 10px;
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 p {

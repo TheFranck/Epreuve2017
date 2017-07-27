@@ -18,6 +18,10 @@
 Route::get('/', 'AccueilController@index');
 Route::get('/list','ListController@index');
 Route::get('/addManga','ListController@addManga');
+
+Route::get('/add/author', 'AuthorsController@addAuthor');
+Route::post('/insert/author','AuthorsController@insertAuthor');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

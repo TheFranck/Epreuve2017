@@ -13,17 +13,19 @@ class ListController extends Controller
     $mangas = Manga::all();
     $value = array();
     $i=0;
+
     foreach ($mangas as $manga) {
       array_push($value, [
         "title" => $manga->title,
         "author" => array(),
         "id" => $manga->id,
-        //"cover" =>$manga->cover,
+        "cover" =>$manga->cover,
       ]
     );
+
     foreach ($manga->authors as $author)
     {
-      array_push($value[$i]["author"], $author->name);
+      array_push($value[$i]["author"], $author->author_name);
     };
     $i ++;
   };
@@ -38,7 +40,7 @@ class ListController extends Controller
     $authorsList = array();
     foreach ($authors as $author)
     {
-      $authorsList[$author->id] = $author->name;
+      $authorsList[$author->id] = $author->author_name;
     }
     return view('addManga', ['authors' => $authorsList ]);
   }

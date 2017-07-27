@@ -1,0 +1,211 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #133340;
+    color: #4BCEFF;
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding:0;
+  margin:0;
+  list-style-type:none;
+ }
+
+li {
+  padding: 20px;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ a:hover {
+   text-decoration: none;
+   color: white;
+ }
+
+h2 {
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+p {
+  width: 50%;
+  padding-right: 50px;
+}
+
+img {
+  width: 50%
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #26677F;
+}
+
+footer p{
+  padding-top: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/************************* LOGIN ************************************/
+
+#connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #83ABBF;
+}
+
+.panel-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#connect form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+#registrer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #83ABBF;
+}
+
+.panel-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#registrer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+#liste {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #83ABBF;
+  width: 90%;
+}
+
+#liste h2 {
+  margin-top: 0;
+
+}
+
+#liste p {
+  padding: 15px 0;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+th {
+  padding: 10px 5px;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  padding: 20px;
+}
+
+td {
+  padding: 10px 5px;
+}

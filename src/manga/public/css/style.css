@@ -9,6 +9,12 @@ body{
   font-family: 'Titillium Web', sans-serif;
 }
 
+h2 {
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+}
+
 /***************** HEADER ***********************/
 
 header {
@@ -74,7 +80,7 @@ h1 {
   width: 100%;
   padding: 15px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .presentation {
@@ -91,26 +97,93 @@ h1 {
 }
 
 .presentation p {
-  padding: 20px;
+  padding: 10px;
 }
 
 .accueil img {
   width: 50%;
   padding: 20px;
 }
-/**************** SECTION **************************/
+/**************** LISTE MANGAS**************************/
 
-h2 {
-  text-align: center;
-  padding: 20px 10px;
-  margin-top: 50px;
+.img-header2 {
+  width: 100%;
+  background-image: url('../img/illustration-manga.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 560px;
+  margin-top: 0;
 }
 
-main {
+#liste {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
+
+#liste p {
+  padding: 10px;
+}
+
+#table{
+  margin-top: 100px;
+}
+
+#table tbody td {
+  vertical-align: middle;
+}
+
+th {
+text-transform: uppercase;
+text-align: center;
+}
+
+tr #cover{
+  text-transform: uppercase;
+  width: 25%;
+}
+
+#cover img {
+  height: 300px;
+}
+
+tr #auteur{
+  text-transform: uppercase;
+  width: 15%;
+}
+
+tr #titre{
+  text-transform: uppercase;
+  width: 15%;
+}
+tr #syno{
+  width: 30%;
+}
+
+
+.maj-sup{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.maj-sup input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+
+/**************** SECTION MANGAKA **************************/
+
+
+
 
 /************************* LOGIN ************************************/
 
@@ -174,56 +247,7 @@ main {
   width: 100%;
 }
 
-#liste {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #83ABBF;
-  width: 90%;
-}
 
-#liste h2 {
-  margin-top: 0;
-
-}
-
-#liste p {
-  padding: 15px 0;
-}
-
-table {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-}
-
-tbody {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-}
-
-th {
-  padding: 10px 5px;
-}
-
-tr {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 800px;
-  padding: 20px;
-}
-
-td {
-  padding: 10px 5px;
-}
 
 /************************* FOOTER ************************************/
 

@@ -81,7 +81,7 @@ public function updateManga(Request $request)
     {
       $authorsList[$author->id] = $author->author_name;
     }
-  return view('updateManga', ['title' => $manga->title, 'authors' => $authorsList, 'id' => $manga->id]);
+  return view('updateManga', ['title' => $manga->title, 'authors' => $authorsList, 'id' => $manga->id, 'description' => $manga->description]);
 }
 
 /***********************************/
@@ -90,10 +90,10 @@ public function updateMangaAction(Request $request)
 {
   $manga = Manga::find($request->id);
   $manga->title = $request->title;
-  // $book->author = $request->author;
   $manga->save();
   $manga->authors()->detach();
   $manga->authors()->attach($request->author);
+  //$manga->description = $request->description;
   return redirect ('/list');
 }
 

@@ -32,11 +32,11 @@
           <div class="maj-sup">
             {{ Form::open(['url' => '/delete/manga']) }}
             {{ Form::hidden('id', $manga['id']) }}
-            {{ Form::submit('Supprimer')}}
+            {{ Form::submit('Supprimer',['class' => 'buttonSup'])}}
             {{ Form::close() }}
             {{ Form::open(['url' => '/update/manga']) }}
             {{ Form::hidden('id', $manga['id']) }}
-            {{ Form::submit('Mettre à jour ')}}
+            {{ Form::submit('Mettre à jour ',['class' => 'buttonMaj'])}}
             {{ Form::close() }}
           </div>
         </td>

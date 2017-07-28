@@ -13,6 +13,7 @@ h2 {
   text-align: center;
   padding: 20px 10px;
   margin-top: 50px;
+  text-transform: uppercase;
 }
 
 /***************** HEADER ***********************/
@@ -163,7 +164,6 @@ tr #syno{
   width: 30%;
 }
 
-
 .maj-sup{
   display: flex;
   flex-direction: column;
@@ -209,71 +209,251 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 /**************** SECTION MANGAKA **************************/
 
-
-
-
-/************************* LOGIN ************************************/
-
-#connect {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #83ABBF;
-}
-
-.panel-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.img-header4 {
   width: 100%;
+  background-image: url('../img/studio1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 560px;
+  margin-top: 0;
 }
 
-#connect form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
+.buttonAdd {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.form-group{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
+.buttonAdd:hover {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-#registrer {
+.addAuthor{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #83ABBF;
-}
-
-.panel-body {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-#registrer form {
+
+
+.formAuthor{
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+
+.formAuthor label{
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.formAuthor input{
+  width: 64%;
+  padding: 2px;
+  margin-bottom: 15px;
+}
+
+.mangaka_name {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.mangaka_name li{
+  border-right: 0.5px solid grey;
+}
+
+.mangaka_name li:first-child{
+  border-left: 0.5px solid grey;
+}
+/************************* AJOUT MANGA ************************************/
+
+.img-header3 {
+  width: 100%;
+  background-image: url('../img/lectrice-manga2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 560px;
+  margin-top: 0;
+}
+
+.addManga{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
-.form-group{
+.formManga{
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.formManga label{
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.formManga input{
+  width: 64%;
+  padding: 2px;
+  margin-bottom: 15px;
+
+}
+
+.formManga select{
+  width: 64%;
+  padding: 2px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.formManga textarea{
+  width: 64%;
+  padding: 2px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.formManga .buttonAdd {
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.formManga .buttonAdd:hover {
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/************************* UPDATE ************************************/
+
+.img-header5 {
+  width: 100%;
+  background-image: url('../img/mangaka.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 560px;
+  margin-top: 0;
+}
+
+.upManga{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
+.formUpdate{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.formUpdate label{
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+..formUpdate input{
+  width: 64%;
+  padding: 2px;
+  margin-bottom: 15px;
+
+}
+
+.formUpdate select{
+  width: 64%;
+  padding: 2px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.formUpdate textarea{
+  width: 64%;
+  padding: 2px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.formUpdate .buttonAdd {
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.formUpdate .buttonAdd:hover {
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
 
 /************************* FOOTER ************************************/
